@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Gran Canaria Webcams</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #eef2f3;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: url('https://images.unsplash.com/photo-1548786817-4a0b73ed61c8?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: white;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top:0; left:0; right:0; bottom:0;
+            background: rgba(0,0,0,0.45);
+        }
+        header h1 {
+            position: relative;
+            font-size: 42px;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+        }
+
+        /* MAIN CONTENT */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .webcam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        /* CAMERA CARDS */
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+        .thumb {
+            height: 150px;
+            background: #ccc;
+            background-size: cover;
+            background-position: center;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #005ea6;
+        }
+        .card a {
+            text-decoration: none;
+            color: #005ea6;
+            font-weight: bold;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gran Canaria Live Webcams</h1>
+</header>
+
+<div class="container">
+    <h2>Webcams</h2>
+
+    <div class="webcam-grid">
+
+        <!-- AMADORES -->
+        <div class="card">
+            <div class="thumb" style="background-image:url('https://www.webcamtaxi.com/images/stories/spain/grancanaria/amadoresbeach.jpg');"></div>
+            <div class="card-content">
+                <div class="card-title">Amadores Beach</div>
+                <a href="https://www.webcamtaxi.com/en/spain/gran-canaria/amadores-beach-cam.html" target="_blank">Bekijk webcam</a>
+            </div>
+        </div>
+
+        <!-- EL FRONTON -->
+        <div class="card">
+            <div class="thumb" style="background-image:url('https://www.webcamtaxi.com/images/stories/spain/grancanaria/elfronton.jpg');"></div>
+            <div class="card-content">
+                <div class="card-title">El Frontón – Gáldar</div>
+                <a href="https://www.webcamtaxi.com/en/spain/gran-canaria/el-fronton-galdar-cam.html" target="_blank">Bekijk webcam</a>
+            </div>
+        </div>
+
+        <!-- PUERTO RICO MARINA -->
+        <div class="card">
+            <div class="thumb" style="background-image:url('https://www.webcamtaxi.com/images/stories/spain/grancanaria/puertorico.jpg');"></div>
+            <div class="card-content">
+                <div class="card-title">Puerto Rico Marina</div>
+                <a href="https://www.webcamtaxi.com/en/spain/gran-canaria/puerto-rico-marina.html" target="_blank">Bekijk webcam</a>
+            </div>
+        </div>
+
+        <!-- LAS CANTERAS -->
+        <div class="card">
+            <div class="thumb" style="background-image:url('https://www.webcamtaxi.com/images/stories/spain/grancanaria/lacantera.jpg');"></div>
+            <div class="card-content">
+                <div class="card-title">Playa Las Canteras</div>
+                <a href="https://www.webcamtaxi.com/en/spain/gran-canaria/las-canteras-beach.html" target="_blank">Bekijk webcam</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
